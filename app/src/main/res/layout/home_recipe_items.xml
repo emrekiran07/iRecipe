@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:elevation="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/light_red">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/_7sdp"
+                android:elevation="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iv_recipe_img"
+                    android:src="@drawable/background_image"
+                    android:scaleType="fitXY"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="2.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/recipe_upload_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="@string/daniel"
+                    android:textColor="@color/color_primary_dark"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    />
+                <TextView
+                    android:id="@+id/dish_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="@string/dish_name"
+                    android:textColor="@color/color_primary_dark"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:includeFontPadding="false"
+                    />
+
+                <TextView
+                    android:id="@+id/ingredient_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="0.3">
+
+            <com.like.LikeButton
+                android:id="@+id/like_hearted_button"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:circle_start_color="@color/color_primary"
+                app:like_drawable="@drawable/like_filled_heart"
+                app:unlike_drawable="@drawable/like_unfilled_heart"
+                app:dots_primary_color="@color/color_primary_dark"
+                app:dots_secondary_color="@color/black"
+                app:circle_end_color="@color/red"
+                app:icon_size="25dp"
+                app:liked="false"
+                app:anim_scale_factor="4"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

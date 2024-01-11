@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <style name="CardStyleEditText" parent="@style/CardView">
+        <item name="android:layout_marginStart">@dimen/_25sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_25sdp</item>
+        <item name="cardCornerRadius">@dimen/_6sdp</item>
+        <item name="cardBackgroundColor">@color/edit_text_background</item>
+    </style>
+
+    <style name="EditTextStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/color_primary_dark</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/_7sdp</item>
+        <item name="android:background">@null</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+
+    </style>
+
+    <style name="AppButtonStyle" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:layout_marginTop">@dimen/_20sdp</item>
+        <item name="android:includeFontPadding">false</item>
+
+
+    </style>
+
+    <style name="RememberMeCheckbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:layout_marginStart">@dimen/_25sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_25sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/color_primary_dark</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+
+    </style>
+
+
+    <style name="RoundShapeTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="shapeAppearanceMediumComponent">@style/RoundShapeAppearance</item>
+    </style>
+
+    <style name="RoundShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+
+
+</resources>

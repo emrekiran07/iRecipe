@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Irecipe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="email">Email</string>
+    <string name="email_text">Email.....</string>
+    <string name="password">Password...</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="create_a_new_account">Create a new account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name">User Name...</string>
+    <string name="phone_number">Phone Number...</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="daniel">Daniel</string>
+    <string name="profile">Profile</string>
+    <string name="favorite_recipes">Favorite recipes</string>
+    <string name="user_profile">User Profile</string>
+    <string name="about_us">About Us....</string>
+    <string name="profile_view">Profile View</string>
+    <string name="mail">Mail</string>
+    <string name="mohsin_gmail_com">mohsin@gmail.com</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="upload">Upload</string>
+    <string name="upload_recipe">Upload recipe</string>
+    <string name="dish_name">Dish Name</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="directions">Directions</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recipe_detail">Recipe Detail</string>
+    <string name="uploaded_by">Uploaded By:</string>
+    <string name="skip">Skip</string>
+    <string name="my_recipes">My Recipes</string>
+</resources>

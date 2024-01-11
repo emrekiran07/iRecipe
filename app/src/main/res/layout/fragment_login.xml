@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_red"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.fragments.LoginFragment">
+
+    <include layout="@layout/app_logo_ui" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardStyleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <EditText
+                android:id="@+id/user_login_email_Address"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email_text"
+                android:maxLength="35"
+                android:inputType="textEmailAddress" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardStyleEditText"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="@dimen/_40sdp">
+
+            <EditText
+                android:id="@+id/user_login_password"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/password"
+                android:maxLength="20"
+                android:inputType="textPassword" />
+        </androidx.cardview.widget.CardView>
+
+        <CheckBox
+            android:id="@+id/remember_me_check_box"
+            style="@style/RememberMeCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_a_new_account"
+                android:textSize="@dimen/_9sdp"
+                android:fontFamily="@font/poppins_thin"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_primary_dark"
+                />
+
+            <TextView
+                android:id="@+id/go_to_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/sign_up"
+                android:textColor="@color/color_primary_dark"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="@dimen/_10sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:includeFontPadding="false"
+                tools:ignore="RtlSymmetry" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/AppButtonStyle"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/login"
+
+            />
+
+        <TextView
+            android:id="@+id/skip_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/skip"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/color_primary_dark"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
